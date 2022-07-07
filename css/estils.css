@@ -1,0 +1,186 @@
+h2, .h2 {
+    font-size: calc(1.425rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+    h2, .h2 {
+      font-size: 2.5rem;
+    }
+}
+
+.btn-custom {
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+}
+.btn-custom:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+}
+.btn-registre {
+    color: #000;
+    background-color: rgb(204, 204, 204);
+    text-transform: uppercase;
+}
+.btn-registre:hover {
+    color: #000;
+    background-color: rgba(204, 204, 204, 0.5);
+}
+
+
+/* Menú de navegació */
+.navbar-expand-md {
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+nav.bg-custom {
+    background-color: #000;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*Seccions */
+section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+/* Secció presentació */
+#presentacio {
+    background: #000 url('../img/bg-hero.jpg') no-repeat 50% 25%;
+    background-size: cover;
+    color: #fff;
+}
+.presentacio {
+    height: 50vh;
+}
+@media (min-width: 768px) {
+    .presentacio {
+        height: 80vh;
+    }
+}
+a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+a:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+/* Secció cursos */
+#cursos {
+    background-color: #ffcd00;
+}
+.card {
+    border: none;
+}
+.card-footer {
+    border: none;
+    background-color: inherit;
+}
+/* Secció vídeos */
+#videos {
+    background-color: #000;
+    color: #fff;
+}
+/* Preguntes freqüents */
+.accordion-button {
+    font-weight: 700;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-body-color);
+    background-color: #fff;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);
+  }
+  .accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    border: 0;
+}
+footer a:hover {
+    color: #ccc;
+}
+footer .list-inline-item::after {
+    content: " · ";
+    padding-left: 12px;
+}
+footer .list-inline-item:last-child::after {
+    content:"";
+    padding-left: 0;
+}
+
+/* Modal de registre */
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+/* Pàgines interiors */
+#pagines h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+    #pagines h1 {
+      font-size: 3.5rem;
+    }
+    #pagines table {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Cookie consent de Osano */
+.cc-window.cc-banner {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.cc-link {
+    text-decoration: none;
+}
+
+#deny {
+    background-color: #000;
+    color: #fff;
+}
